@@ -1,0 +1,15 @@
+# Install TripoSR deps first (TRIPOSR_ROOT). Then:
+#   pip install -r training/triposr_finetune/requirements.txt
+
+torch>=2.1
+torchvision>=0.16
+pytorch-lightning>=2.2
+peft>=0.8
+safetensors>=0.4
+bitsandbytes>=0.41; platform_system != "Darwin"
+numpy>=1.24
+pillow>=10.0
+huggingface_hub>=0.20
+omegaconf>=2.3
+einops>=0.7
+scikit-image>=0.22.0

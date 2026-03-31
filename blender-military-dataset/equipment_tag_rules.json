@@ -1,0 +1,23 @@
+{
+  "equipment_rules": [
+    { "match": ["plate_carrier", "plate carrier", "pc_", "carrier_", "vest_", "slick_", "chest_rig", "chestrig"], "tags": ["plate_carrier", "body_armor", "tactical"] },
+    { "match": ["rifle", "carbine", "ar15", "ar-15", "m4_", "m16", "weapon", "firearm", "pistol", "smg"], "tags": ["weapon", "firearm"] },
+    { "match": ["helmet", "ach_", "mich", "fast_", "ballistic_helm", "helm_"], "tags": ["helmet", "headgear"] },
+    { "match": ["uniform", "bdu", "acu", "ocp", "jacket", "pants", "combat_shirt", "fatigues", "nylon", "crye"], "tags": ["uniform", "military_apparel"] }
+  ],
+  "camouflage_rules": [
+    { "match": ["multicam", "multi_cam", "mtp"], "tags": ["camouflage", "multicam"] },
+    { "match": ["ucp", "ab_u", "digital_u", "digicam", "aoru", "aor1", "aor2"], "tags": ["camouflage", "digital_pattern"] },
+    { "match": ["m81", "woodland", "dpm", "flecktarn", "pen_cott"], "tags": ["camouflage", "woodland_pattern"] },
+    { "match": ["marpat", "nwu", "atacs", "kryptek"], "tags": ["camouflage"] }
+  ],
+  "colorway_rules": [
+    { "match": ["black", "_blk", "bk_"], "tags": ["colorway", "black"] },
+    { "match": ["tan", "coyote", "cb_", "khaki"], "tags": ["colorway", "tan"] }
+  ],
+  "material_hints": [
+    { "match": ["helmet", "helm"], "pbr_notes": "non_reflective_paint_low_spec", "tags": ["material_helmet_paint"] },
+    { "match": ["rifle", "weapon", "m4", "ar15"], "pbr_notes": "matte_metal_weapon", "tags": ["material_matte_metal"] },
+    { "match": ["uniform", "shirt", "nylon", "vest_soft"], "pbr_notes": "nylon_fabric_military", "tags": ["material_nylon_fabric"] }
+  ]
+}

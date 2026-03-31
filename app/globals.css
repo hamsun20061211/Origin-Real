@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  /* 폴백: Tailwind 번들이 막혀도 기본이 흰 화면이 되지 않도록 */
+  background-color: #050505;
+  color: #e4e4e7;
+}
+
+body {
+  @apply min-h-screen bg-[#050505] text-zinc-100 antialiased;
+  background-image:
+    radial-gradient(ellipse 120% 80% at 50% -20%, rgba(0, 229, 255, 0.1), transparent),
+    radial-gradient(ellipse 55% 45% at 100% 20%, rgba(0, 229, 255, 0.05), transparent);
+}
+
+/* Custom scrollbar for sidebar */
+.sidebar-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-zinc-700/80;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(39, 39, 42, 0.5) 0%,
+    rgba(63, 63, 70, 0.8) 50%,
+    rgba(39, 39, 42, 0.5) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.8s ease-in-out infinite;
+}
+

@@ -1,0 +1,11 @@
+Training data for triposr_finetune:
+
+1) Put PNG/JPG/WEBP files in:  data/processed/images/
+
+2) Optional captions:  data/processed/captions/<same_filename_stem>.txt
+
+   OR use data/processed/manifest.jsonl (one JSON object per line).
+
+3) If you used scripts/image_collector to fill data/raw, copy images into data/processed/images/
+
+Then run train.py with --processed-dir data/processed

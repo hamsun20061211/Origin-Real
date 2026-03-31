@@ -1,0 +1,41 @@
+{
+  "name": "origin-real",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:full": "node scripts/dev-stack.cjs",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "engine": "node scripts/run-engine.cjs",
+    "engine:stub": "node scripts/run-engine.cjs --stub",
+    "engine:ping": "node scripts/ping-engine.cjs",
+    "photogrammetry": "node scripts/run-photogrammetry.cjs"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.117.0",
+    "@react-three/fiber": "^8.17.10",
+    "framer-motion": "^11.11.17",
+    "lucide-react": "^0.468.0",
+    "next": "14.2.18",
+    "next-auth": "^4.24.11",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.170.0",
+    "undici": "^6.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/three": "^0.170.0",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.2.1",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.18",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.6.3"
+  }
+}

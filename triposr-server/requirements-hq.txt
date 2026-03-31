@@ -1,0 +1,7 @@
+# Origin Real HQ 하이브리드 파이프라인 (선택)
+# pip install -r requirements-hq.txt
+torchvision>=0.16.0
+basicsr>=1.4.2
+realesrgan>=0.3.0
+opencv-python-headless>=4.8.0
+scikit-image>=0.22.0

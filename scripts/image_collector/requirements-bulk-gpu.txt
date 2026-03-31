@@ -1,0 +1,16 @@
+# rembg 가 onnxruntime(GPU/CPU)를 함께 잡도록 공식 extra 사용
+#
+# PowerShell (지금 오류 나는 python 과 동일하게):
+#   pip uninstall -y onnxruntime onnxruntime-gpu
+#   pip install -r scripts/image_collector/requirements-bulk-gpu.txt
+#
+# 또는 한 줄:
+#   pip install "rembg[gpu]"
+#
+# GPU 안 되면 CPU:
+#   pip install "rembg[cpu]"
+
+httpx>=0.27.0
+rembg[gpu]>=2.0.50
+tqdm>=4.67.0
+Pillow>=10.0.0

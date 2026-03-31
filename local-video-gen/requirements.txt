@@ -1,0 +1,22 @@
+# PyTorch: GPU 맞는 wheel을 먼저 설치하세요 (아래는 예시).
+# CUDA 12.4:  pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+# CPU 전용:  pip install torch torchvision
+#
+# 그다음:
+#   pip install -r requirements.txt
+
+diffusers>=0.30.0
+transformers>=4.44.0
+accelerate>=0.34.0
+safetensors>=0.4.4
+huggingface-hub>=0.24.0
+Pillow>=10.4.0
+imageio[ffmpeg]>=2.35.0
+numpy>=1.26.0,<3
+
+# 선택: Windows에서 빌드가 어려울 수 있음 — 스크립트가 없으면 자동 스킵
+# pip install xformers
+# xformers>=0.0.27
+
+# 선택: 일부 환경에서만 (Linux + CUDA 빌드) — 필수 아님
+# bitsandbytes>=0.43.0

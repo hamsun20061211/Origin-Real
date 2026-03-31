@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "source_root": "C:/Users/4080/Downloads/Origin Real/downloads",
+  "total_scored": 1,
+  "total_selected": 1,
+  "samples": [
+    {
+      "path": "C:/Users/4080/Downloads/Origin Real/downloads/vest/image1.png",
+      "width": 2048,
+      "height": 1538,
+      "sharpness": 7538.092030042999,
+      "edge_density": 0.22823497439856957,
+      "noise": 115.67272267953751,
+      "resolution_score": 1.501953125,
+      "quality_score": 1.2,
+      "category_guess": "unknown",
+      "pattern_guess": "unknown",
+      "dhash": "d65c2d14656d6158"
+    }
+  ]
+}

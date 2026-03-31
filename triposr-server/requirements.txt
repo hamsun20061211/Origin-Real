@@ -1,0 +1,17 @@
+# Install TripoSR deps first from the TripoSR repo:
+#   pip install -r path/to/TripoSR/requirements.txt
+#
+# NumPy 2.x 에서 ndarray.ptp 제거됨 — trimesh 4.0.x 는 깨짐. 4.6+ 권장.
+trimesh>=4.6
+
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.9
+httpx>=0.27.0
+peft>=0.8.0
+safetensors>=0.4.0
+
+# Real-ESRGAN 2x (3D 전처리). CUDA 사용 시 TRIPOSR_DEVICE=cuda:0 등과 함께 쓰면 됨.
+# torchvision>=0.17 에서 제거된 모듈 호환은 realesrgan_upscale.py 가 shim 처리함.
+realesrgan>=0.3.0
+basicsr>=1.4.2

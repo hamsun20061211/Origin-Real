@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "total_inputs": 1,
+  "total_generated": 0,
+  "items": [
+    {
+      "input_image": "C:/Users/4080/Downloads/Origin Real/downloads/vest/image1.png",
+      "category": "unknown",
+      "quality_score": 1.2,
+      "generated_glb": null
+    }
+  ]
+}

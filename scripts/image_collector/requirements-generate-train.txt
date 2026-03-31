@@ -1,0 +1,20 @@
+# Local SD + rembg + Real-ESRGAN (PNG pipeline). ASCII-only: Windows pip reads this as cp949.
+#
+# Install PyTorch for your CUDA version first, e.g.:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124
+#   pip install -r scripts/image_collector/requirements-generate-train.txt
+#
+# rembg GPU (optional): pip uninstall -y onnxruntime onnxruntime-gpu && pip install "rembg[gpu]"
+
+torch>=2.1.0
+diffusers>=0.27.0
+transformers>=4.38.0
+accelerate>=0.27.0
+safetensors>=0.4.0
+Pillow>=10.0.0
+numpy>=1.24.0
+opencv-python-headless>=4.8.0
+tqdm>=4.67.0
+rembg[gpu]>=2.0.50
+realesrgan>=0.3.0
+basicsr>=1.4.2

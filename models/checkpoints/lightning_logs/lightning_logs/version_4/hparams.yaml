@@ -1,0 +1,28 @@
+pretrained_id: stabilityai/TripoSR
+config_name: config.yaml
+weight_name: model.ckpt
+lora_r: 8
+lora_alpha: 16
+lora_dropout: 0.05
+target_modules:
+- to_q
+- to_k
+- to_v
+- to_out.0
+- proj_in
+- proj_out
+- proj
+- net.2
+lr: 0.0001
+weight_decay: 0.01
+use_8bit_adam: true
+augment_strength: 0.12
+checkpoint_dir: !!python/object/apply:pathlib.WindowsPath
+- C:\
+- Users
+- '4080'
+- Downloads
+- Origin Real
+- models
+- checkpoints
+safetensors_basename: triposr_lora

@@ -1,0 +1,4 @@
+# Text → 3D (Replicate). TripoSR venv 에서:
+#   pip install -r requirements-text3d.txt
+replicate>=0.26.0
+trimesh[easy]>=4.0.0

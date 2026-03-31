@@ -1,0 +1,16 @@
+# TripoSR stack for Windows + Python 3.12 (tokenizers 0.14 is gone from PyPI; use newer transformers).
+# Install AFTER: pip install torch ... from pytorch.org if you need a specific CUDA build.
+
+omegaconf==2.3.0
+Pillow==10.1.0
+einops==0.7.0
+transformers>=4.36.0,<5
+trimesh==4.0.5
+rembg
+onnxruntime>=1.16.0
+huggingface-hub
+imageio[ffmpeg]
+gradio
+xatlas==0.0.9
+moderngl==5.10.0
+scikit-image>=0.22.0
